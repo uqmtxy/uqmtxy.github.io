@@ -11,3 +11,7 @@ end
 
 gem 'github-pages'
 gem 'connection_pool', '2.5.0'
+# Ruby 3.4+ no longer bundles CSV by default; Jekyll still requires it.
+gem 'csv'
+# Liquid uses BigDecimal, which Ruby 3.4+ also ships separately.
+gem 'bigdecimal'
